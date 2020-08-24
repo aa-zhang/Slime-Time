@@ -17,7 +17,7 @@ public class Drop{
 		this.DropY = y;
 		this.property = p;
 		this.gravity = 0;
-		ic=new ImageIcon("Drop.png");
+		ic=new ImageIcon("images/Drop.png");
 		Image image = ic.getImage(); // transform it 
 		Image newimg = image.getScaledInstance(30, 30,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
 		ic = new ImageIcon(newimg);

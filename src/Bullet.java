@@ -23,7 +23,7 @@ public class Bullet{
 		this.property = "bullet";
 		this.shot = false;
 		this.laserDone = true;
-		ic=new ImageIcon("bullet.png");
+		ic=new ImageIcon("images/bullet.png");
 	}
 	public void checkCollision(){
 		ArrayList<Slime> slimes = GameFrame.getSlimeList();
@@ -97,7 +97,7 @@ public class Bullet{
 				this.counter = 0;
 				this.counterIncrement = 0;
 				this.laserDone = true;
-				ic=new ImageIcon("bullet.png");
+				ic=new ImageIcon("images/bullet.png");
 				GameFrame.createBullet();
 			}
 		}

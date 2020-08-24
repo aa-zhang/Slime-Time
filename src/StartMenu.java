@@ -8,7 +8,7 @@ public class StartMenu{
 	private ImageIcon ic;
 	
 	public StartMenu(){
-		ic= new ImageIcon("background2.png");
+		ic= new ImageIcon("images/background2.png");
 		Image image = ic.getImage(); // transform it 
 		Image newimg = image.getScaledInstance(1750, 975,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
 		ic = new ImageIcon(newimg);

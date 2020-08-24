@@ -14,7 +14,7 @@ public class Shield{
 		this.ShieldX = x-30;
 		this.ShieldY = 765;
 		this.hasShield = true;
-		ic=new ImageIcon("Shield.png");
+		ic=new ImageIcon("images/Shield.png");
 	}
 	
 	public void breakShield(){

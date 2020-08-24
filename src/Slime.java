@@ -32,7 +32,7 @@ public class Slime{
 		if (this.moveX == 0){
 			this.moveY = 0;
 		}
-		ic=new ImageIcon("slime.png");
+		ic=new ImageIcon("images/slime.png");
 		Image image = ic.getImage(); // transform it 
 		Image newimg = image.getScaledInstance((this.size), (this.size),  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
 		ic = new ImageIcon(newimg);
@@ -106,7 +106,7 @@ public class Slime{
 	}
 	
 	public void pop(int s){
-		ic=new ImageIcon("Pop.png");
+		ic=new ImageIcon("images/Pop.png");
 		Image image = ic.getImage(); // transform it 
 		Image newimg = image.getScaledInstance(s, s,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
 		ic = new ImageIcon(newimg);

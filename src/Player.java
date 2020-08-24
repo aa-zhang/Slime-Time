@@ -23,7 +23,7 @@ public class Player {
 		this.playerX = x;
 		this.playerY = 805;
 		this.moveX = 0;
-		this.ic=new ImageIcon("player.png");
+		this.ic=new ImageIcon("images/player.png");
 		this.laser = false;
 		this.counter = 0;
 		this.counterIncrement = 0;
@@ -140,7 +140,7 @@ public class Player {
 	public void Sound(String p){
 		if (p.equals("laser")){
 			try{
-				File file = new File("lPickUp.wav");
+				File file = new File("soundFX/lPickUp.wav");
 				Clip clip = AudioSystem.getClip();
 				clip.open(AudioSystem.getAudioInputStream(file));
 				clip.start();
@@ -151,7 +151,7 @@ public class Player {
 		}
 		else if (p.equals("shield")){
 			try{
-				File file = new File("fPickUp.wav");
+				File file = new File("soundFX/fPickUp.wav");
 				Clip clip = AudioSystem.getClip();
 				clip.open(AudioSystem.getAudioInputStream(file));
 				clip.start();
@@ -162,7 +162,7 @@ public class Player {
 		}
 		else if (p.equals("lShoot")){
 			try{
-				File file = new File("lShoot.wav");
+				File file = new File("soundFX/lShoot.wav");
 				Clip clip = AudioSystem.getClip();
 				clip.open(AudioSystem.getAudioInputStream(file));
 				clip.start();
@@ -173,7 +173,7 @@ public class Player {
 		}
 		else if (p.equals("pop")){
 			try{
-				File file = new File("ouch.wav");
+				File file = new File("soundFX/ouch.wav");
 				Clip clip = AudioSystem.getClip();
 				clip.open(AudioSystem.getAudioInputStream(file));
 				clip.start();
@@ -184,7 +184,7 @@ public class Player {
 		}
 		else if (p.equals("dead")){
 			try{
-				File file = new File("dead.wav");
+				File file = new File("soundFX/dead.wav");
 				Clip clip = AudioSystem.getClip();
 				clip.open(AudioSystem.getAudioInputStream(file));
 				clip.start();
@@ -195,7 +195,7 @@ public class Player {
 		}
 		else if (p.equals("rocket")){
 			try{
-				File file = new File("rocket.wav");
+				File file = new File("soundFX/rocket.wav");
 				Clip clip = AudioSystem.getClip();
 				clip.open(AudioSystem.getAudioInputStream(file));
 				clip.start();
@@ -206,7 +206,7 @@ public class Player {
 		}
 		else if (p.equals("music")){
 			try{
-				File file = new File("bgMusic.wav");
+				File file = new File("soundFX/bgMusic.wav");
 				Clip clip = AudioSystem.getClip();
 				clip.open(AudioSystem.getAudioInputStream(file));
 				clip.start();
@@ -220,7 +220,7 @@ public class Player {
     public void pickUp(String s){
     	if (s.equals("laser")){
     		laser = true;
-    		this.ic=new ImageIcon("pLaser1.png");
+    		this.ic=new ImageIcon("images/pLaser1.png");
     		this.counterIncrement = 1;
 			this.playerY = 780;
 			Sound("laser");
@@ -234,41 +234,41 @@ public class Player {
 	public void update(){
 		playerX += this.moveX;
 		if (GameFrame.getLaserDone() && !laser){
-			this.ic=new ImageIcon("player.png");
+			this.ic=new ImageIcon("images/player.png");
 			this.playerY = 800;
 			this.counter = 0;
 			this.counterIncrement = 0;
 		}
 		else{
 			if (counter%50<5){
-				this.ic = new ImageIcon("pl1.png");
+				this.ic = new ImageIcon("images/pl1.png");
 			}
 			else if (counter%50 <10){
-				this.ic = new ImageIcon("pl2.png");
+				this.ic = new ImageIcon("images/pl2.png");
 			}
 			else if (counter%50 <15){
-				this.ic = new ImageIcon("pl3.png");
+				this.ic = new ImageIcon("images/pl3.png");
 			}
 			else if (counter%50 <20){
-				this.ic = new ImageIcon("pl4.png");
+				this.ic = new ImageIcon("images/pl4.png");
 			}
 			else if (counter%50 <25){
-				this.ic = new ImageIcon("pl5.png");
+				this.ic = new ImageIcon("images/pl5.png");
 			}
 			else if (counter%50 <30){
-				this.ic = new ImageIcon("pl6.png");
+				this.ic = new ImageIcon("images/pl6.png");
 			}
 			else if (counter%50 <35){
-				this.ic = new ImageIcon("pl7.png");
+				this.ic = new ImageIcon("images/pl7.png");
 			}
 			else if (counter%50 <40){
-				this.ic = new ImageIcon("pl8.png");
+				this.ic = new ImageIcon("images/pl8.png");
 			}
 			else if (counter%50 <45){
-				this.ic = new ImageIcon("pl9.png");
+				this.ic = new ImageIcon("images/pl9.png");
 			}
 			else{
-				this.ic = new ImageIcon("pl10.png");
+				this.ic = new ImageIcon("images/pl10.png");
 			}
 			counter+= counterIncrement;
 		}

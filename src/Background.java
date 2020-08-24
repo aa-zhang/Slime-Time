@@ -8,7 +8,7 @@ public class Background{
 	private ImageIcon ic;
 	
 	public Background(){
-		ic=new ImageIcon("Background2.png");
+		ic=new ImageIcon("images/Background2.png");
 		Image image = ic.getImage(); // transform it 
 		Image newimg = image.getScaledInstance(1750, 975,  java.awt.Image.SCALE_SMOOTH); // scale it the smooth way  
 		ic = new ImageIcon(newimg);

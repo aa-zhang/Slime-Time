@@ -4,6 +4,7 @@ A colourful slime shooter game where slimes explode into smaller slimes when sho
 ### Game Mechanics ###  
 Move around with arrow keys and shoot with space.
 Try to destroy all of the slimes, however the larger slimes will explode into smaller slimes when shot.
+
 <img src ="images/slime1.png" width="300"> <img src ="images/slime2.png" width="300">
 
 ### Power Ups ###

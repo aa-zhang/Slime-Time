@@ -13,6 +13,3 @@ The laser instantly vaporizes the slimes before they have a chance of splitting 
 The shield protects the player from one of the slimes attacks.
 
 <img src ="images/slime3.png" width="300"> <img src ="images/slime4.png" width="300">
-
-### About ###
-This project was created in my grade 12 copmuter science class as an optional extra GUI project.

@@ -1,5 +1,5 @@
 # Slime-Time
-A colourful slime shooter game where slimes explode into smaller slimes when shot. Inspired by one of my favourite childhood games known as Bubble Trouble.
+A colourful slime shooter game where slimes explode into smaller slimes when shot.
 
 ### Game Mechanics ###  
 Move around with arrow keys and shoot with space.
